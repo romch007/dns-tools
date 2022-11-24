@@ -88,7 +88,7 @@ void DnsLookup::lookupFinished() {
   }
 }
 
-void DnsLookup::addResult(QString type, int ttl, QString result) {
+void DnsLookup::addResult(const QString& type, int ttl, const QString& result) {
   int row = m_resultTable->rowCount();
   m_resultTable->insertRow(row);
   m_resultTable->setItem(row, 0, new QTableWidgetItem(type));

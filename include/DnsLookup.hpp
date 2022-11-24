@@ -26,7 +26,7 @@ class DnsLookup : public QWidget {
 
   QString m_dnsServer;
 
-  void addResult(QString type, int ttl, QString result);
+  void addResult(const QString& type, int ttl, const QString& result);
   bool validHostname() const;
 
  private Q_SLOTS:
